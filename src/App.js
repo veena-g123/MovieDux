@@ -28,7 +28,7 @@ function App() {
     <div className="App">
       <div className="container">
         <Header />
-        <Router>
+        <Router basename="/MovieDux">
           <nav>
             <ul>
               <li>
