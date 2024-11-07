@@ -3,7 +3,7 @@ import "../styles.css";
 
 export default function MovieCard({ movie, toggleWatchlist, isWatchlisted }) {
   const errorHandler = (e) => {
-    e.target.src = "public/images/default.jpg";
+    e.target.src = "images/default.jpg";
   };
   const getRatingColor = (rating) => {
     if (rating >= 8) return "rating-good";
@@ -15,7 +15,7 @@ export default function MovieCard({ movie, toggleWatchlist, isWatchlisted }) {
   return (
     <div className="movie-card" key={movie.id}>
       <img
-        src={`public/images/${movie.image}`}
+        src={`images/${movie.image}`}
         alt={movie.title}
         onError={errorHandler}
       />
